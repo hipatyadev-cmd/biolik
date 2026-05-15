@@ -1,0 +1,5 @@
+import React,{createContext,useContext,useEffect,useMemo,useState}from'react';
+import{L}from'../data/i18n.js';
+const C=createContext();
+export const useApp=()=>useContext(C);
+export function AppProvider({children}){const[lang,setLang]=useState(localStorage.lang||'fr');const[cart,setCart]=useState(()=>JSON.parse(localStorage.cart||'[]'));useEffect(()=>{localStorage.lang=lang;document.documentElement.dir=L[lang].dir;document.documentElement.lang=lang},[lang]);useEffect(()=>{localStorage.cart=JSON.stringify(cart)},[cart]);const add=p=>setCart(c=>{const f=c.find(x=>x.id===p.id);return f?c.map(x=>x.id===p.id?{...x,qty:x.qty+1}:x):[...c,{...p,qty:1}]});const remove=id=>setCart(c=>c.filter(x=>x.id!==id));const qty=(id,n)=>setCart(c=>c.map(x=>x.id===id?{...x,qty:Math.max(1,n)}:x));const clear=()=>setCart([]);const count=cart.reduce((s,x)=>s+x.qty,0);const subtotal=cart.reduce((s,x)=>s+x.qty*Number(x.price||0),0);const v=useMemo(()=>({lang,setLang,cart,add,remove,qty,clear,count,subtotal}),[lang,cart,count,subtotal]);return <C.Provider value={v}>{children}</C.Provider>}
