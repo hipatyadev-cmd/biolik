@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { ChevronDown, Gem, HeartHandshake, ScanLine, Sparkles, Truck } from 'lucide-react';
 import { useApp } from '../context/AppContext.jsx';
 import { tr } from '../data/i18n.js';
-import fallbackHero from '../assets/hero.jpeg';
+const fallbackHero = "/images/hero.jpeg";
 
 const fade = {
   initial: { opacity: 0, y: 30 },
@@ -14,11 +14,11 @@ const fade = {
 };
 
 const assetCandidates = name => [
-  `/src/assets/${name}.png`,
-  `/src/assets/${name}.jpg`,
-  `/src/assets/${name}.jpeg`,
-  `/src/assets/${name}.webp`,
-  `/src/assets/${name}`
+`/images/${name}.png`,
+`/images/${name}.jpg`,
+`/images/${name}.jpeg`,
+`/images/${name}.webp`,
+`/images/${name}`
 ];
 
 function AssetImage({ name, alt, className }) {
