@@ -13,12 +13,13 @@ export default function Header() {
   return (
     <header className="topbar">
       <Link to="/" className="logo">
-        <span>✦</span>
-        <div>
-          <b>BioLik</b>
-          <small>Moroccan Bio</small>
-        </div>
-      </Link>
+  <img src="/images/img1.jpeg" alt="BioLik Logo" className="logo-img" />
+
+  <div>
+    <b>BioLik</b>
+    <small>Moroccan Bio</small>
+  </div>
+</Link>
 
       <nav className={open ? "nav open" : "nav"}>
         <Link className={active("/")} to="/" onClick={() => setOpen(false)}>Home</Link>

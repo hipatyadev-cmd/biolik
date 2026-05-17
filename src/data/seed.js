@@ -1,19 +1,32 @@
 export const seedProducts = [
   {
-    id: 'miel-atlas-premium',
-    category: 'Miels',
+    id: 'moroccan-ghassoul-stones',
+    category: 'Soins naturels',
     skin: 'All',
     audience: 'Everyone',
-    origin: 'Atlas',
-    stock: 18,
-    price: 24,
-    oldPrice: 30,
+    origin: 'Morocco',
+    stock: 20,
+    price: 17,
+    oldPrice: 23,
     featured: true,
-    images: ['https://res.cloudinary.com/dl3g7hxf6/image/upload/q_auto/f_auto/v1778364619/file_000000000964724690c9d321189d5704_yi0dt6.png'],
-    name: { fr: 'Miel Naturel de l Atlas', en: 'Atlas Natural Honey', ar: 'عسل طبيعي من الأطلس' },
-    short: { fr: 'Miel pur au gout riche, recolte avec soin.', en: 'Pure honey with a rich taste, carefully harvested.', ar: 'عسل نقي بمذاق غني ومحصول بعناية.' },
-    desc: { fr: 'Un miel marocain authentique selectionne pour les clients qui cherchent un produit naturel, gourmand et premium. Ideal au petit-dejeuner, dans les infusions ou comme cadeau terroir.', en: 'Authentic Moroccan honey selected for customers looking for a natural, gourmet and premium product. Perfect for breakfast, herbal teas or terroir gifting.', ar: 'عسل مغربي أصيل مختار لمن يبحث عن منتج طبيعي وفاخر. مناسب للفطور والمشروبات الساخنة أو كهدية من التراث المغربي.' }
+    images: ['https://res.cloudinary.com/dw5sj4n8s/image/upload/q_auto/f_auto/v1779031945/IMG-20260517-WA0043_t91xrb.jpg'],
+    name: {
+      fr: 'Ghassoul Marocain Naturel',
+      en: 'Natural Moroccan Ghassoul',
+      ar: 'غاسول مغربي طبيعي'
+    },
+    short: {
+      fr: 'Pierre volcanique naturelle pour soin du corps et cheveux.',
+      en: 'Natural volcanic clay for body and hair care.',
+      ar: 'غاسول طبيعي للعناية بالبشرة والشعر.'
+    },
+    desc: {
+      fr: 'Ghassoul marocain traditionnel connu pour purifier la peau et absorber les impuretes naturellement.',
+      en: 'Traditional Moroccan ghassoul known for purifying the skin naturally.',
+      ar: 'غاسول مغربي تقليدي معروف بتنقية البشرة وامتصاص الشوائب بشكل طبيعي.'
+    }
   },
+
   {
     id: 'tbrima-herbes-marocaines',
     category: 'Soins naturels',
@@ -24,56 +37,24 @@ export const seedProducts = [
     price: 18,
     oldPrice: 24,
     featured: true,
-    images: ['https://res.cloudinary.com/dl3g7hxf6/image/upload/q_auto/f_auto/v1778364560/file_00000000c884724695c71fb257bd4ae3_jedoqa.png'],
-    name: { fr: 'Tbrima aux Plantes Marocaines', en: 'Moroccan Herbal Tbrima', ar: 'تبريمة بالأعشاب المغربية' },
-    short: { fr: 'Melange naturel inspire des rituels de hammam.', en: 'Natural blend inspired by Moroccan hammam rituals.', ar: 'خلطة طبيعية مستوحاة من طقوس الحمام المغربي.' },
-    desc: { fr: 'Tbrima traditionnelle aux plantes, concue pour accompagner les routines de soin du corps. Elle laisse une sensation de proprete, de douceur et de fraicheur naturelle.', en: 'Traditional herbal tbrima made for body-care routines. It leaves a clean, soft and naturally fresh feeling.', ar: 'تبريمة تقليدية بالأعشاب مخصصة لروتين العناية بالجسم، تمنح إحساسا بالنظافة والنعومة والانتعاش الطبيعي.' }
+    images: ['https://res.cloudinary.com/dw5sj4n8s/image/upload/q_auto/f_auto/v1779031965/file_00000000fee871f4b28e489e2aa14f0d_dx0lpb.png'],
+    name: {
+      fr: 'Tbrima aux Plantes Marocaines',
+      en: 'Moroccan Herbal Tbrima',
+      ar: 'تبريمة بالأعشاب المغربية'
+    },
+    short: {
+      fr: 'Melange naturel inspire des rituels de hammam.',
+      en: 'Natural blend inspired by hammam rituals.',
+      ar: 'خلطة طبيعية مستوحاة من الحمام المغربي.'
+    },
+    desc: {
+      fr: 'Tbrima traditionnelle aux herbes marocaines pour une peau douce et propre.',
+      en: 'Traditional Moroccan herbal tbrima for smooth and clean skin.',
+      ar: 'تبريمة تقليدية بالأعشاب المغربية لبشرة ناعمة ونظيفة.'
+    }
   },
-  {
-    id: 'aker-fassi-naturel',
-    category: 'Cosmetiques',
-    skin: 'All',
-    audience: 'Women',
-    origin: 'Fes',
-    stock: 20,
-    price: 12,
-    oldPrice: 16,
-    featured: true,
-    images: ['https://res.cloudinary.com/dl3g7hxf6/image/upload/q_auto/f_auto/v1778363304/file_00000000f1dc72468a620f5730bac7c3_dtnmnn.png'],
-    name: { fr: 'Aker Fassi Naturel', en: 'Natural Aker Fassi', ar: 'عكر فاسي طبيعي' },
-    short: { fr: 'Poudre rouge traditionnelle pour levres et joues.', en: 'Traditional red powder for lips and cheeks.', ar: 'بودرة حمراء تقليدية للشفاه والخدود.' },
-    desc: { fr: 'Aker Fassi naturel, symbole de la beaute marocaine. Il apporte une touche coloree elegante aux levres et aux joues avec un rendu doux et authentique.', en: 'Natural Aker Fassi, a symbol of Moroccan beauty. It adds an elegant tint to lips and cheeks with a soft, authentic finish.', ar: 'عكر فاسي طبيعي، رمز من رموز الجمال المغربي. يضيف لمسة لون أنيقة للشفاه والخدود بمظهر ناعم وأصيل.' }
-  },
-  {
-    id: 'nila-bleue-sahara',
-    category: 'Soins naturels',
-    skin: 'Oily',
-    audience: 'Women',
-    origin: 'Sahara',
-    stock: 16,
-    price: 15,
-    oldPrice: 20,
-    featured: true,
-    images: ['https://res.cloudinary.com/dl3g7hxf6/image/upload/q_auto/f_auto/v1778363172/file_00000000695c72468969a05a8e526c0e_cz13cg.png'],
-    name: { fr: 'Nila Bleue du Sahara', en: 'Saharan Blue Nila', ar: 'النيلة الزرقاء الصحراوية' },
-    short: { fr: 'Soin traditionnel pour eclat et douceur.', en: 'Traditional care for glow and softness.', ar: 'عناية تقليدية للإشراقة والنعومة.' },
-    desc: { fr: 'La nila bleue est connue dans les rituels marocains pour illuminer le teint et adoucir la peau. A utiliser avec moderation dans une routine de soin adaptee.', en: 'Blue nila is known in Moroccan rituals for brightening the complexion and softening the skin. Use moderately within a suitable skincare routine.', ar: 'النيلة الزرقاء معروفة في الطقوس المغربية للمساعدة على إشراقة البشرة ونعومتها. تستعمل باعتدال ضمن روتين مناسب.' }
-  },
-  {
-    id: 'huile-argan-pure',
-    category: 'Huiles',
-    skin: 'Dry',
-    audience: 'Everyone',
-    origin: 'Agadir',
-    stock: 22,
-    price: 32,
-    oldPrice: 42,
-    featured: true,
-    images: ['https://res.cloudinary.com/dl3g7hxf6/image/upload/q_auto/f_auto/v1778363143/file_00000000556c7246aa11e6e765c41b89_dydgp7.png'],
-    name: { fr: 'Huile d Argan Pure', en: 'Pure Argan Oil', ar: 'زيت أركان طبيعي' },
-    short: { fr: 'Huile vegetale pure pour peau, cheveux et ongles.', en: 'Pure botanical oil for skin, hair and nails.', ar: 'زيت نباتي نقي للبشرة والشعر والأظافر.' },
-    desc: { fr: 'Huile d argan marocaine pure, riche et nourrissante. Elle convient aux peaux seches, aux cheveux ternes et aux routines naturelles premium.', en: 'Pure Moroccan argan oil, rich and nourishing. Suitable for dry skin, dull hair and premium natural routines.', ar: 'زيت أركان مغربي نقي وغني ومغذ. مناسب للبشرة الجافة والشعر الباهت وروتين العناية الطبيعي الفاخر.' }
-  },
+
   {
     id: 'amlou-premium-amandes',
     category: 'Amlou',
@@ -81,12 +62,191 @@ export const seedProducts = [
     audience: 'Everyone',
     origin: 'Essaouira',
     stock: 15,
-    price: 19,
-    oldPrice: 25,
+    price: 22,
+    oldPrice: 28,
     featured: true,
-    images: ['https://res.cloudinary.com/dl3g7hxf6/image/upload/q_auto/f_auto/v1778110149/file_0000000010507246a30f530a1583e6a7_ovcjrs.png'],
-    name: { fr: 'Amlou Premium aux Amandes', en: 'Premium Almond Amlou', ar: 'أملو فاخر باللوز' },
-    short: { fr: 'Amandes, miel et argan pour une texture onctueuse.', en: 'Almonds, honey and argan for a smooth texture.', ar: 'لوز وعسل وأركان بقوام كريمي.' },
-    desc: { fr: 'Amlou artisanal marocain prepare avec des amandes, du miel et de l huile d argan. Un produit gourmand et premium pour le petit-dejeuner ou les coffrets cadeaux.', en: 'Moroccan artisanal amlou made with almonds, honey and argan oil. A gourmet premium product for breakfast or gift boxes.', ar: 'أملو مغربي تقليدي باللوز والعسل وزيت الأركان. منتج لذيذ وفاخر للفطور أو علب الهدايا.' }
+    images: ['https://res.cloudinary.com/dw5sj4n8s/image/upload/q_auto/f_auto/v1779031962/file_00000000f22071f4aba19b108d832205_wffgdc.png'],
+    name: {
+      fr: 'Amlou Premium aux Amandes',
+      en: 'Premium Almond Amlou',
+      ar: 'أملو فاخر باللوز'
+    },
+    short: {
+      fr: 'Amandes, miel et argan pour une texture onctueuse.',
+      en: 'Almonds, honey and argan for a creamy texture.',
+      ar: 'لوز وعسل وأركان بقوام كريمي.'
+    },
+    desc: {
+      fr: 'Amlou artisanal marocain gourmand et premium.',
+      en: 'Premium Moroccan artisanal amlou.',
+      ar: 'أملو مغربي تقليدي فاخر ولذيذ.'
+    }
+  },
+
+  {
+    id: 'aker-fassi-naturel',
+    category: 'Cosmetiques',
+    skin: 'All',
+    audience: 'Women',
+    origin: 'Fes',
+    stock: 20,
+    price: 14,
+    oldPrice: 18,
+    featured: true,
+    images: ['https://res.cloudinary.com/dw5sj4n8s/image/upload/q_auto/f_auto/v1779031963/file_00000000188c71f48cdbea0f0158c487_i4akew.png'],
+    name: {
+      fr: 'Aker Fassi Naturel',
+      en: 'Natural Aker Fassi',
+      ar: 'عكر فاسي طبيعي'
+    },
+    short: {
+      fr: 'Colorant traditionnel pour levres et joues.',
+      en: 'Traditional lip and cheek tint.',
+      ar: 'ملون طبيعي للشفاه والخدود.'
+    },
+    desc: {
+      fr: 'Aker Fassi naturel inspire de la beaute marocaine traditionnelle.',
+      en: 'Natural Aker Fassi inspired by Moroccan beauty traditions.',
+      ar: 'عكر فاسي طبيعي مستوحى من الجمال المغربي التقليدي.'
+    }
+  },
+
+  {
+    id: 'huile-argan-pure',
+    category: 'Huiles',
+    skin: 'Dry',
+    audience: 'Everyone',
+    origin: 'Agadir',
+    stock: 22,
+    price: 34,
+    oldPrice: 42,
+    featured: true,
+    images: ['https://res.cloudinary.com/dw5sj4n8s/image/upload/q_auto/f_auto/v1779031963/file_000000002ccc71f48dd75beb64ed24db_tr19kx.png'],
+    name: {
+      fr: 'Huile d Argan Pure',
+      en: 'Pure Argan Oil',
+      ar: 'زيت أركان طبيعي'
+    },
+    short: {
+      fr: 'Huile vegetale nourrissante pour peau et cheveux.',
+      en: 'Nourishing botanical oil for skin and hair.',
+      ar: 'زيت مغذي للبشرة والشعر.'
+    },
+    desc: {
+      fr: 'Huile d argan marocaine premium riche en bienfaits naturels.',
+      en: 'Premium Moroccan argan oil rich in natural benefits.',
+      ar: 'زيت أركان مغربي فاخر غني بالفوائد الطبيعية.'
+    }
+  },
+
+  {
+    id: 'savon-aker-fassi',
+    category: 'Savons',
+    skin: 'All',
+    audience: 'Women',
+    origin: 'Fes',
+    stock: 18,
+    price: 11,
+    oldPrice: 15,
+    featured: false,
+    images: ['https://res.cloudinary.com/dw5sj4n8s/image/upload/q_auto/f_auto/v1779031944/IMG-20260517-WA0085_gvcrnn.jpg'],
+    name: {
+      fr: 'Savon a l Aker Fassi',
+      en: 'Aker Fassi Soap',
+      ar: 'صابون بالعكر الفاسي'
+    },
+    short: {
+      fr: 'Savon naturel inspire des traditions marocaines.',
+      en: 'Natural soap inspired by Moroccan traditions.',
+      ar: 'صابون طبيعي مستوحى من التقاليد المغربية.'
+    },
+    desc: {
+      fr: 'Savon doux enrichi a l Aker Fassi pour une peau propre et parfumee.',
+      en: 'Soft soap enriched with Aker Fassi.',
+      ar: 'صابون ناعم بالعكر الفاسي لبشرة نظيفة ومعطرة.'
+    }
+  },
+
+  {
+    id: 'savon-nila-bleue',
+    category: 'Savons',
+    skin: 'Oily',
+    audience: 'Women',
+    origin: 'Sahara',
+    stock: 17,
+    price: 12,
+    oldPrice: 16,
+    featured: false,
+    images: ['https://res.cloudinary.com/dw5sj4n8s/image/upload/q_auto/f_auto/v1779031944/IMG-20260517-WA0087_avkoew.jpg'],
+    name: {
+      fr: 'Savon a la Nila Bleue',
+      en: 'Blue Nila Soap',
+      ar: 'صابون بالنيلة الزرقاء'
+    },
+    short: {
+      fr: 'Savon traditionnel pour eclat et douceur.',
+      en: 'Traditional soap for glow and softness.',
+      ar: 'صابون تقليدي للإشراقة والنعومة.'
+    },
+    desc: {
+      fr: 'Savon marocain a la nila bleue pour une peau lumineuse.',
+      en: 'Moroccan blue nila soap for radiant skin.',
+      ar: 'صابون مغربي بالنيلة الزرقاء لبشرة مشرقة.'
+    }
+  },
+
+  {
+    id: 'miel-atlas-premium',
+    category: 'Miels',
+    skin: 'All',
+    audience: 'Everyone',
+    origin: 'Atlas',
+    stock: 18,
+    price: 26,
+    oldPrice: 32,
+    featured: true,
+    images: ['https://res.cloudinary.com/dw5sj4n8s/image/upload/q_auto/f_auto/v1779032116/file_000000007b1c71f4abc81cd5d380d8b8_belu40.png'],
+    name: {
+      fr: 'Miel Naturel de l Atlas',
+      en: 'Atlas Natural Honey',
+      ar: 'عسل طبيعي من الأطلس'
+    },
+    short: {
+      fr: 'Miel pur avec morceaux de cire naturelle.',
+      en: 'Pure honey with natural honeycomb.',
+      ar: 'عسل طبيعي مع قطع الشهد.'
+    },
+    desc: {
+      fr: 'Miel marocain premium riche en gout avec cire naturelle.',
+      en: 'Premium Moroccan honey rich in flavor with natural honeycomb.',
+      ar: 'عسل مغربي فاخر غني بالمذاق مع الشهد الطبيعي.'
+    }
+  },
+  {
+  id: 'savon-argan-olive',
+  category: 'Savons',
+  skin: 'Dry',
+  audience: 'Everyone',
+  origin: 'Morocco',
+  stock: 19,
+  price: 13,
+  oldPrice: 17,
+  featured: false,
+  images: ['https://res.cloudinary.com/dw5sj4n8s/image/upload/q_auto/f_auto/v1779032999/IMG-20260517-WA0096_xasixw.jpg'],
+  name: {
+    fr: 'Savon Naturel a l Argan et Olive',
+    en: 'Natural Argan & Olive Soap',
+    ar: 'صابون طبيعي بالأركان والزيتون'
+  },
+  short: {
+    fr: 'Savon marocain nourrissant et naturel.',
+    en: 'Natural nourishing Moroccan soap.',
+    ar: 'صابون مغربي طبيعي ومغذي.'
+  },
+  desc: {
+    fr: 'Savon artisanal enrichi a l huile d argan et a l olive pour nettoyer et hydrater la peau en douceur.',
+    en: 'Handcrafted soap enriched with argan and olive oil for gentle cleansing and hydration.',
+    ar: 'صابون تقليدي غني بزيت الأركان والزيتون لتنظيف وترطيب البشرة بلطف.'
   }
+}
 ];
