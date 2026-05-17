@@ -772,7 +772,7 @@ img {
   padding: 70px;
   background:
     linear-gradient(rgba(14,55,35,.86), rgba(14,55,35,.86)),
-    url('https://images.unsplash.com/photo-1615484477778-ca3b77940c25?q=80&w=1600') center/cover;
+     center/cover;
   color: #fff;
   display: grid;
   align-items: center;
